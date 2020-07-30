@@ -1,0 +1,195 @@
+/*CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    font-weight: 400, 600;
+}
+.header{
+    background-image: url(../images/bg-header-desktop.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2{
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+}
+.info-description,
+.info-track-description,
+.info-description-workflow,
+.info-description-clip,
+.info-description-last{
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    padding: 15px;
+}
+.info-description{max-width: 550px;}
+.info-track-description,
+.info-description-clip{max-width: 610px;}
+.info-description-last{max-width: 650px;}
+.btn{padding: 15px;}
+.first-btn, 
+.second-btn{
+    border-radius: 15px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #FFF;
+    border: none;
+}
+.first-btn{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: -6px 6px 14px hsl(171, 66%, 44%);
+}
+.second-btn{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 6px 6px 10px hsl(233, 100%, 69%);
+}
+.info-track{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 50px 0;
+}
+.area-items{
+    display: flex;
+    margin-bottom: 100px;
+}
+.area-items-img{
+    margin-left: -35px;
+    margin-right: 60px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.items{max-width: 370px;}
+h4{
+    color: hsl(210, 10%, 33%);
+}
+span{
+    color: hsl(201, 11%, 66%);
+}
+.clipboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.space{
+    margin-top: 100px;
+}
+.items-workflow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.item{
+    text-align: center;
+    max-width: 350px;
+}
+.workflow-company{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+footer{
+    background-color: hsl(0, 0%, 94%);
+    margin-top: 100px;
+    padding-top: 30px;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+}
+.footer-item-left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+}
+.social-media{
+    fill: #4C545C;
+    fill-rule: nonzero;
+    margin-right: 10px;
+}
+.social-media:hover{
+    fill: hsl(171, 66%, 44%);
+}
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 200px;
+}
+.menu-footer-up{
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color:  hsl(201, 11%, 66%);
+}
+a:hover {
+    color: hsl(171, 66%, 44%);
+  }
+.menu-up{
+    margin-right: 100px;
+}
+.menu-down{
+    margin-right: 75px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 1024px){
+    .header{
+        background-image: url(../images/bg-header-mobile.png);
+    }
+    h1, .btn{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .first-btn{margin-bottom: 20px;}
+    .area-items {flex-direction: column;  align-items: center;}
+    .area-items-img {
+        text-align: center;
+        margin: 0;
+    }
+    .img{margin-top: 60px;}
+    .img-computer{width: 300px;}
+    .items {text-align: center;}
+    .items-info, .item{margin-top: 50px;}
+    .items-workflow,
+    .footer-items,
+    .workflow-company {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-up, .menu-down {
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    .footer-items {align-items: center;    }
+    .menu-footer {margin-right: 0; text-align: center;}
+    .menu-footer-up, .menu-footer-down {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{margin-top: 15px;}
+}
